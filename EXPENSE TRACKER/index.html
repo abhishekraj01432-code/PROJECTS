@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1> Expense Tracker</h1>
+
+  <input type="number" id="amount" placeholder="Enter amount">
+  <input type="text" id="desc" placeholder="Description">
+
+  <select id="category">
+    <option>Food</option>
+    <option>Travel</option>
+    <option>Shopping</option>
+    <option>Other</option>
+  </select>
+
+  <button onclick="addExpense()">Add Expense</button>
+
+  <h2>Total: ₹ <span id="total">0</span></h2>
+
+  <ul id="list"></ul>
+</div>
+<a href="report.html">
+  <button>View Reports </button>
+</a>
+<script src="script.js"></script>
+</body>
+</html>

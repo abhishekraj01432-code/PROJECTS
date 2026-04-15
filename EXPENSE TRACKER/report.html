@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reports</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Reports :-</h1>
+
+  <input type="date" id="startDate">
+  <input type="date" id="endDate">
+
+  <button onclick="filterData()">Apply Filter</button>
+
+  <h3>Category Wise</h3>
+  <canvas id="chart"></canvas>
+
+  <h3>Filtered List</h3>
+  <ul id="reportList"></ul>
+
+  <a href="index.html">
+    <button>⬅ Back</button>
+  </a>
+</div>
+
+<script src="report.js"></script>
+</body>
+</html>
