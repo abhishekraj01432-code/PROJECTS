@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Typing Speed Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+
+<div class="theme-toggle">
+    <button id="themeBtn">🌙 Dark Mode</button>
+</div>
+
+<div class="container">
+
+    <h1>⚡ Typing Speed Pro</h1>
+
+    <div class="stats">
+
+        <div class="card">
+            <h3>⏱ Time</h3>
+            <span id="time">150 </span>
+        </div>
+
+        <div class="card">
+            <h3>⚡ WPM</h3>
+            <span id="wpm">0</span>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Accuracy</h3>
+            <span id="accuracy">100</span>%
+        </div>
+
+    </div>
+
+    <div class="quote-box">
+
+        <h2>Paragraph</h2>
+
+        <p id="quote"></p>
+
+    </div>
+
+    <textarea
+        id="input"
+        placeholder="Start typing here..."
+    ></textarea>
+
+    <div class="buttons">
+
+        <button id="restartBtn">
+            🔄 Restart
+        </button>
+
+        <button id="certificateBtn">
+            📜 Download Certificate
+        </button>
+
+    </div>
+
+    <div class="result">
+
+        <h2>🏆 High Score</h2>
+
+        <span id="highScore">0</span> WPM
+
+    </div>
+
+    <div class="leaderboard">
+
+        <h2>🥇 Leaderboard</h2>
+
+        <ol id="leaderboardList">
+
+        </ol>
+
+    </div>
+
+</div>
+
+<audio id="keySound">
+    <source
+    src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"
+    type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

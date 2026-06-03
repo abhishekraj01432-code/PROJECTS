@@ -16,7 +16,7 @@ function App() {
     setInput((prev) => prev.slice(0, -1));
   };
 
-  const calculateResult = () => {
+  const calculateResult = () => { 
     try {
       setInput(eval(input).toString());
     } catch {
