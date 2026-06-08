@@ -49,10 +49,10 @@ h1{
 text-align:center;
 margin-bottom:25px;
 font-size:40px;
-color:#00ffff;
+color:#ff0000;
 text-shadow:
-0 0 10px #00ffff,
-0 0 20px #00ffff;
+0 0 10px #000000,
+0 0 20px #000000;
 }
 
 .theme-toggle{
@@ -143,12 +143,12 @@ transition:.3s;
 }
 
 #restartBtn{
-background:#00ffff;
-color:black;
+background:#0033ff;
+color:white;
 }
 
 #certificateBtn{
-background:#ff00ff;
+background:#ff0000;
 color:white;
 }
 

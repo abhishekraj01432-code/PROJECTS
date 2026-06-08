@@ -77,7 +77,7 @@ const keySound = document.getElementById("keySound");
 let selectedParagraph = "";
 let remainingParagraphs = [...paragraphs];
 
-let timeLeft = 150;
+let timeLeft = 120;
 let timer = null;
 let started = false;
 

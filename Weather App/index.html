@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather X Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="sunny">
+
+    <!-- Animated Sun -->
+    <div class="sun"></div>
+
+    <!-- Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <!-- Rain -->
+    <div id="rain"></div>
+
+    <!-- App -->
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>🌦 Weather X Pro</h1>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search any city in the world..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+                <div id="suggestions"></div>
+
+            </div>
+
+            <div id="loading" class="loading">
+                Loading...
+            </div>
+
+            <div class="weather-info">
+
+                <div class="city-name" id="city">
+                    Search a city
+                </div>
+
+                <div class="temperature" id="temp">
+                    --
+                </div>
+
+                <div class="condition" id="condition">
+                    Weather Info
+                </div>
+
+                <div class="extra-info">
+
+                    <div class="info-box">
+                        <span>💧</span>
+                        <h3 id="humidity">--%</h3>
+                        <p>Humidity</p>
+                    </div>
+
+                    <div class="info-box">
+                        <span>🌬</span>
+                        <h3 id="wind">--</h3>
+                        <p>Wind</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
